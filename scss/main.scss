@@ -118,6 +118,7 @@ main{
 
 // Contact Page
 .boxes {
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr;
 
