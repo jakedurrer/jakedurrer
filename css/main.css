@@ -183,6 +183,7 @@ main {
       transition: all 0.3s ease-out; }
 
 .boxes {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr; }
   .boxes div {
