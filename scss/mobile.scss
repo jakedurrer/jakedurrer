@@ -1,4 +1,11 @@
 // Widescreens
+@include mediaWS{
+    .projects{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+// Widescreens
 @include mediaXl{
     .projects{
         grid-template-columns: repeat(4, 1fr);

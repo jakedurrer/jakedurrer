@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>My Work</title>
 </head>
-<body>
+<body id="bg-img">
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -56,52 +59,157 @@
         <div class="projects">
             <div class="item">
                 <a href="#!">
-                    <img src="img/projects/project1.jpg" alt="Project">
+                    <video controls class="video" >
+                            <source src="img/projects/designlab/gympsa.mp4" type="video/mp4">
                 </a>
                 <a href="#" class="btn-light">
-                    <i class="fas fa-eye"></i> Project
+                    <!---<i class="fas fa-eye"></i>--> Gym PSA
                 </a>
             
             </div>
             <div class="item">
+                    <video  class="video" id="id5" loop>
+                        <source src="img/projects/designlab/Intro.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalFive">
+                            Contact Us
+                          </button>
+
+                    <!--<button class="btn-light" data-modal="modalFive">
+                        Friday Files Intro <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                     </button>
+                    -->
+                        <!-- The Modal -->
+                        <div id="modalFive" class="modal">
+                                <div class="modal-content">
+                                  <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h2>Ask A Question</h2><br>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                  <!--  <div id="modalFive" class="modal">
+                        <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h1>Friday Files Intro</h1>
+                                <p> Intro Sequence used for a School Tv Show Called The Friday Files. <br><br>
+                                Equipment Used: <br>
+                                Canon 80D <br><br>
+                                Software Used: <br>
+                                Adobe After Effects CC 2019<br>
+                                Adobe Premiere Pro CC 2019</p>
+                        </div>    
+                    </div> -->
+            </div>
+
+            <div class="item">
+                    <video  class="video" id="id4" loop>
+                        <source src="img/projects/designlab/Owen Edited.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalFour">
+                            Contact Us
+                          </button>
+
+                          <div id="modalFour" class="modal">
+                                <div class="modal-content">
+                                  <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h2>hello</h2><br>
+                                  </div>
+                                </div>
+                              </div>
+
+                    
+                    
+
+                  <!--  <button class="btn-light" data-modal="modalFour">
+                        Green Screen Compositing <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                     </button>
+
+                       >
+                    <div id="modalFour" class="modal">
+                          
+                        <div class="modal-content">
+                              <span class="close">&times;</span>
+                              <h1>Green Screen Compositing</h1>
+                               
+                                <p>  Testing Green Screen Compositing in a School Tv Show Series Called The Friday Files   <br>  <br>
+                                Equipment Used: <br>
+                                Canon 80D <br>
+                                Rode VideoMic Pro <br> <br>
+                                Software Used: <br>
+                                Adobe After Effects CC 2019</p>
+                        </div>    
+                    </div> -->
+            </div>
+            <div class="item">
                     <a href="#!">
-                        <img src="img/projects/project2.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
+                            <video controls class="video">
+                                    <source src="img/projects/designlab/swhp.mp4" type="video/mp4">
+                        </a>
+                        <a href="#" class="btn-light">
+                            Jedi vs Wizard
+                        </a>
                 
             </div>
             <div class="item">
                     <a href="#!">
-                        <img src="img/projects/project3.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
+                            <video controls class="video">
+                                    <source src="img/projects/designlab/lightsaberfun.mp4" type="video/mp4">
+                        </a>
+                        <a href="#" class="btn-light">
+                            Lightsaber 
+                        </a>
                 
             </div>
             <div class="item">
                     <a href="#!">
-                        <img src="img/projects/project4.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
-                
-             </div>
-             <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project5.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
+                            <video controls class="video">
+                                    <source src="img/projects/designlab/forcefreeze.mp4" type="video/mp4">
+                        </a>
+                        <a href="#" class="btn-light">
+                            Star Wars Force Freeze
+                        </a>
                 
             </div>
 
-            
+
+
+        <!--Modal Script-->
+            <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+                    
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+                    
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+                    
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function() {
+                      modal.style.display = "block";
+                    }
+                    
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                      modal.style.display = "none";
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                      if (event.target == modal) {
+                        modal.style.display = "none";
+                      }
+                    }
+            </script>
+
         </div>
+
+     
     </main>
 <footer id="main-footer">
     Copyright &copy; 2018
@@ -110,3 +218,5 @@
 </body>
 
 </html>
+
+
