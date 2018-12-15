@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>My Work</title>
 </head>
-<body>
+<body id="bg-img">
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
@@ -54,54 +57,154 @@
             All My Current Projects
         </h2>
         <div class="projects">
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project1.jpg" alt="Project">
-                </a>
-                <a href="#" class="btn-light">
-                    <i class="fas fa-eye"></i> Project
-                </a>
-            
-            </div>
-            <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project2.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
-                
-            </div>
-            <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project3.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
-                
-            </div>
-            <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project4.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
-                
-             </div>
-             <div class="item">
-                    <a href="#!">
-                        <img src="img/projects/project5.jpg" alt="Project">
-                    </a>
-                    <a href="#" class="btn-light">
-                        <i class="fas fa-eye"></i> Project
-                    </a>
-                
-            </div>
+            <div class="item"> <!--Gym Class PSA-->
+                <video  class="video" id="id4" loop>
+                        <source src="img/projects/designlab/gympsa.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalSix">
+                            Gym Class PSA <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                          </button>
 
-            
+                    <div id="modalSix" class="modal">
+                            <div class="modal-content">
+                                 <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h1>Gym Class PSA </h1>
+                                    <p>School Project on a mental health psa for phys ed. Had to follow specific outline (ex. "I am") <br><br>
+                                    Equipment Used: <br>
+                                    Canon 80D <br> 
+                                    Rode VideoMic Pro<br> 
+                                    DJI Ronin S<br> <br>
+                                    Software Used: <br>
+                                    Adobe Premiere Pro CC 2019</p>
+                                  </div>
+                                </div>
+                            </div>
+            </div>
+            <div class="item"> <!--Friday Files Intro-->
+                    <video  class="video" id="id5" loop>
+                        <source src="img/projects/designlab/Intro.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalFive">
+                            Friday Files Intro <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i>
+                          </button>
+
+                        <div id="modalFive" class="modal">
+                                <div class="modal-content">
+                                  <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h1>Friday Files Intro</h1>
+                                     <p> Intro Sequence used for a School Tv Show Called The Friday Files. <br><br>
+                                     Equipment Used: <br>
+                                     Canon 80D <br> 
+                                     DJI Ronin S<br> <br>
+                                     Software Used: <br>
+                                     Adobe After Effects CC 2019<br>
+                                     Adobe Premiere Pro CC 2019</p>
+                                  </div>
+                                </div>
+                              </div>
+            </div>
+            <div class="item"> <!--Green Screen Compositing-->
+                    <video  class="video" id="id4" loop>
+                        <source src="img/projects/designlab/Owen Edited.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalFour">
+                            Green Screen Compositing <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                          </button>
+
+                    <div id="modalFour" class="modal">
+                            <div class="modal-content">
+                                 <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h1>Green Screen Compositing</h1>
+                                    <p>Testing Green Screen Compositing in a School Tv Show Series Called The Friday Files   <br>  <br>
+                                    Equipment Used: <br>
+                                    Canon 80D <br>
+                                    Rode VideoMic Pro <br> <br>
+                                    Software Used: <br>
+                                    Adobe After Effects CC 2019</p>
+                                  </div>
+                                </div>
+                            </div>
+            </div>
+            <div class="item"> <!--Jedi Vs Wizard-->
+                <video  class="video" id="id4" loop>
+                        <source src="img/projects/designlab/swhp.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalThree">
+                           Jedi Vs Wizard <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                          </button>
+
+                    <div id="modalThree" class="modal">
+                            <div class="modal-content">
+                                 <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h1>Jedi Vs Wizard </h1>
+                                    <p>Testing Various VFX such as Lightsabers, Holograms, Wands.<br><br>
+                                    Equipment Used: <br>
+                                    Canon 80D <br> 
+                                    Rode VideoMic Pro<br><br>
+                                    Software Used: <br>
+                                    Adobe After Effects CC 2018 <br>
+                                    Adobe Premiere Pro CC 2018</p>
+                                  </div>
+                                </div>
+                            </div>
+            </div>
+            <div class="item"> <!--Lightsaber-->
+                <video  class="video" id="id4" loop>
+                        <source src="img/projects/designlab/lightsaberfun.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalTwo">
+                            Lightsaber <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                          </button>
+
+                    <div id="modalTwo" class="modal">
+                            <div class="modal-content">
+                                 <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h1>Lightsaber Fun </h1>
+                                    <p>Quick Lightsaber Edit <br><br>
+                                    Equipment Used: <br>
+                                    Canon 80D <br> <br>
+                                    Software Used: <br>
+                                    Adobe After Effects CC 2018</p>
+                                  </div>
+                                </div>
+                            </div>
+            </div>
+            <div class="item"> <!--Star Wars Force Freeze-->
+                <video  class="video" id="id4" loop>
+                        <source src="img/projects/designlab/forcefreeze.mp4" type="video/mp4">
+                    </video>
+    
+                    <button class="button" data-modal="#modalOne">
+                            Star Wars Force Freeze <i class="fas fa-align-right" style="float: right; padding-top: 3px;"></i> 
+                          </button>
+
+                    <div id="modalOne" class="modal">
+                            <div class="modal-content">
+                                 <div class="contact-form">
+                                    <a class="close">&times;</a>
+                                    <h1>Star Wars Force Freeze </h1>
+                                    <p>Fun video idea taken from Star Wars VII: The Force Awakens <br>  <br>
+                                    Equipment Used: <br>
+                                    Canon 60D <br> <br>
+                                    Software Used: <br>
+                                    Adobe After Effects CC 2017</p>
+                                  </div>
+                                </div>
+                            </div>
+            </div>
         </div>
+
+     
     </main>
 <footer id="main-footer">
     Copyright &copy; 2018
@@ -110,3 +213,5 @@
 </body>
 
 </html>
+
+
