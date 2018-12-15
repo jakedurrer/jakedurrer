@@ -31,16 +31,26 @@ function toggleMenu(){
     }
 }
 
-$('#id4, #id5').hover(function(event) {
-    if(event.type === "mouseenter") {
-        $(this).attr("controls", "");
-        console.log("shalom");
-    } else if(event.type === "mouseleave") {
-        $(this).removeAttr("controls");
-    }
-});
 
-$(".button").on("click", function() {
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('#id4, #id5').attr("controls", "");
+    console.log("Mobile Detected");
+   }else {
+    console.log("Desktop Detected");
+    $('#id4, #id5').hover(function(event) {
+        if(event.type === "mouseenter") {
+            $(this).attr("controls", "");
+        } else if(event.type === "mouseleave") {
+            $(this).removeAttr("controls");
+        }
+    });
+    
+   
+   }
+
+
+   $(".button").on("click", function() {
     var modal = $(this).data("modal");
     $(modal).show();
   });
@@ -51,3 +61,10 @@ $(".modal").on("click", function(e) {
       $(this).closest(".modal").hide();
     }
 });
+
+
+
+
+
+
+
